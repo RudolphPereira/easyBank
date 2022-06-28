@@ -1,0 +1,35 @@
+.easybank__forms {
+  background: $lightGrayisBlue;
+  &-container {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  &-title {
+    h2 {
+      color: $darkBlue;
+      font-size: 2.5rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
+.easybank__form {
+  @include flex(flex-start, flex-start, column);
+  input {
+    margin: 0.5rem 0;
+  }
+}
+
+#email {
+  border: none;
+  border-radius: 2rem;
+  padding: 0.68rem 1.6rem;
+  max-width: 30rem;
+  width: 100%;
+  outline: none;
+  transition: all 0.3s ease;
+  &:hover {
+    box-shadow: 0 0 6px rgb(211, 205, 205);
+  }
+}

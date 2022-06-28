@@ -1,0 +1,48 @@
+.easybank__header {
+  background: $white;
+}
+
+.easybank__nav {
+  // min-height: 8vh;
+  @include flex(space-between, center, 0);
+  @include belowIpad {
+    @include flex(center, center, column);
+    padding-top: 1rem;
+  }
+
+  &-list {
+    @include flex(flex-end, 0, 0);
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  &-item {
+    margin-left: 1.5rem;
+    padding: 1.4rem 0rem;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      border-bottom: 3px solid $limeGreen;
+    }
+    @include belowIpad {
+      margin: 0 0.7rem;
+    }
+  }
+
+  &-link {
+    font-size: 0.98rem;
+    color: $grayishBlue;
+    transition: all 0.2s ease;
+  }
+
+  &-item:hover a {
+    color: $darkBlue;
+  }
+
+  &-cta {
+    @include belowIpad {
+      display: none;
+    }
+  }
+}

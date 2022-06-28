@@ -1,0 +1,50 @@
+.easybank__usp {
+  background: $lightGrayisBlue;
+  margin-top: -9rem;
+  position: relative;
+  z-index: 1;
+  @include belowIpad {
+    margin-top: 2rem;
+  }
+
+  &-container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  &-title {
+    h2 {
+      color: $darkBlue;
+      font-size: 2.5rem;
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &-subtitle {
+    p {
+      color: $grayishBlue;
+      font-size: 1.3rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  // Cards
+  &-card-image-container {
+    margin-bottom: 2rem;
+  }
+
+  &-card-title {
+    h4 {
+      color: $darkBlue;
+      font-size: 1.6rem;
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &-card-subtitle {
+    p {
+      color: $grayishBlue;
+      font-size: 1.2rem;
+    }
+  }
+}

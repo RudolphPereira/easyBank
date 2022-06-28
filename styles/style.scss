@@ -1,0 +1,34 @@
+// Gobal Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Public Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+// Imports
+@import "./mixins";
+@import "./variables";
+@import "./buttons";
+@import "./nav";
+@import "./hero";
+@import "./usp";
+@import "./articles";
+@import "./form";
+@import "./footer";
